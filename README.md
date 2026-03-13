@@ -77,9 +77,26 @@ These techniques improve MRI contrast and help highlight tumor regions.
 
 Example tumor detection outputs from MRI scans.
 
-<img src="results/glioma_results.png" width="32%">
-<img src="results/pituitary_results.png" width="32%">
+<img src="results/glioma_results.png" width="60%">
+<img src="results/pituitary_results.png" width="60%">
 <img src="results/meningioma_results.png" width="32%">
+
+## Web Interface
+
+The project includes a Flask-based web dashboard that allows users to upload MRI brain scans and automatically detect brain tumors using the YOLOv12n model.
+
+### Features
+- Upload MRI scan
+- Automatic tumor detection
+- Bounding box visualization
+- Explainable AI heatmap
+- Detection confidence and tumor type
+
+### Dashboard Preview
+
+<img src="results/ui_dashboard.png" width="80%">
+
+---
 
 ## Model Performance
 
@@ -105,6 +122,7 @@ The YOLOv12n model was trained to detect three types of brain tumors from MRI im
 - Postprocessing time: **1.3 ms**
 
 ---
+
 
   
 ## Project Workflow
