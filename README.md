@@ -77,9 +77,9 @@ These techniques improve MRI contrast and help highlight tumor regions.
 
 Example tumor detection outputs from MRI scans.
 
-<img src="results/glioma_results.png" width="60%">
-<img src="results/pituitary_results.png" width="60%">
-<img src="results/meningioma_results.png" width="32%">
+<img src="results/glioma_results.png" width="85%">
+<img src="results/pituitary_results.png" width="85%">
+<img src="results/meningioma_results.png" width="85%">
 
 ## Web Interface
 
