@@ -30,13 +30,13 @@ The workflow includes preprocessing MRI images, training a YOLOv12n model, and g
 The Brain Tumor Segmentation (BraTS) dataset provides multimodal MRI scans including tumor annotations.
 
 Dataset link:
-https://www.med.upenn.edu/cbica/brats2020/data.html
+https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation
 
 ### Figshare Brain Tumor Dataset
 This dataset contains MRI images labeled for different types of brain tumors.
 
 Dataset link:
-https://figshare.com/articles/dataset/brain_tumor_dataset/1512427
+https://www.kaggle.com/datasets/ashkhagan/figshare-brain-tumor-dataset
 
 ---
 
