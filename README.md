@@ -57,21 +57,54 @@ These preprocessing steps significantly improve the clarity of tumor regions bef
 
 ---
 
-## Model Architecture
+## Model
 
-The detection model used in this project is:
+The detection model used is **YOLOv12n**, a lightweight object detection architecture designed for fast inference and efficient performance.
 
-YOLOv12n (nano version)
+The model was trained on MRI brain tumor datasets including **BraTS2020** and **Figshare Brain Tumor Dataset**.
 
-Reasons for choosing YOLOv12n:
-- Lightweight architecture
-- Fast inference
-- Efficient object detection performance
+Preprocessing techniques applied before training include:
 
-The model was trained to detect tumor regions and output bounding boxes around abnormal regions in MRI scans.
+- Log transformation
+- Histogram equalization
+- CLAHE (Contrast Limited Adaptive Histogram Equalization)
+
+These techniques improve MRI contrast and help highlight tumor regions.
 
 ---
 
+## Detection Results
+
+Example tumor detection outputs from MRI scans.
+
+<img src="results/glioma_results.png" width="32%">
+<img src="results/pituitary_results.png" width="32%">
+<img src="results/meningioma_results.png" width="32%">
+
+## Model Performance
+
+The YOLOv12n model was trained to detect three types of brain tumors from MRI images.
+
+| Class | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
+|------|------|------|------|------|
+| Glioma | 0.869 | 0.726 | 0.819 | 0.535 |
+| Meningioma | 0.948 | 0.979 | 0.992 | 0.778 |
+| Pituitary | 0.946 | 0.936 | 0.979 | 0.658 |
+| **Overall** | **0.921** | **0.881** | **0.93** | **0.657** |
+
+### Model Details
+- Model: **YOLOv12n**
+- Total Parameters: **2,557,313**
+- Layers: **159**
+- GFLOPs: **6.3**
+- Dataset Size: **668 MRI images**
+
+### Inference Performance
+- Preprocessing time: **0.2 ms**
+- Inference time: **2.6 ms**
+- Postprocessing time: **1.3 ms**
+
+  
 ## Project Workflow
 
 1. Load MRI datasets (BraTS2020 and Figshare)
