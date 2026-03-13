@@ -104,6 +104,8 @@ The YOLOv12n model was trained to detect three types of brain tumors from MRI im
 - Inference time: **2.6 ms**
 - Postprocessing time: **1.3 ms**
 
+---
+
   
 ## Project Workflow
 
